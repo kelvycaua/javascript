@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: rgba(86, 86, 167, 0.762);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <h1>Aprendendo a usar o DOM</h1>
+    <p>Aqui o resultado</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, nam officiis incidunt minima recusandae ducimus labore? Ut repudiandae consectetur amet neque culpa perferendis necessitatibus pariatur? Ipsam placeat maxime sapiente necessitatibus?</p>
+    <div id="msg">
+        Clique em mim
+    </div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText)
+
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+    </script>
+</body>
+</html>
