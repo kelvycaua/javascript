@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    País de Nascimento <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var pais = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+            var p = (pais.value)
+            res.innerHTML = `<p>Seu pais é ${p}</p>`
+            if ( p == 'Brasil'){
+                res.innerHTML += `Voce é Brasileiro`
+            } else{
+                res.innerHTML += `Voce é estrangeiro`
+            }
+
+        }
+    </script>
+</body>
+</html>
