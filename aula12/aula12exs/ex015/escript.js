@@ -23,7 +23,7 @@ function verificar() {
                 img.setAttribute('src' , 'foto-jovem-m.png.jpg')
             } else if (idade < 50) {
                 //adulto
-                img.setAttribute('src', foto-adulto-matchMedia.png.jpg)
+                img.setAttribute('src','foto-adulto-m.png.jpg')
             } else {
                 //idoso
                 img.setAttribute('src', 'foto-idoso-m.png.jpg')
